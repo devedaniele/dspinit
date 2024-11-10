@@ -49,23 +49,17 @@ public class XService extends Service {
         return START_STICKY;
     }
 
+    @Nullable
     @Override
     public IBinder onBind(Intent intent) {
-        return binder;
-        }
+        return null;
+    }
 
-        @Override
-        public void onDestroy() {
-            if (pid != -1)session.kill();
+    @Override
+    public void onDestroy() {}
 
-            try {
-                Thread.sleep(200);
-            } catch (InterruptedException e) {}
-        }
-
-        @Override
-        public boolean onUnbind(Intent intent) {
-            return false;
-        }
-
+    @Override
+    public boolean onUnbind(Intent intent) {
+        return false;
+    }
 }
