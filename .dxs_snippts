@@ -9,8 +9,8 @@ splits {
     }
 }
 
-libs.annotation
-libs.core
+implementation libs.annotation
+implementation libs.core
 
 // XApplication.java
 import android.app.Application;
