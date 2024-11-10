@@ -1,0 +1,7 @@
+[versions]
+annotation = "1.7.1"
+core = "1.13.1"
+
+[libraries]
+annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation"}
+core = { group = "androidx.core", name = "core", version.ref = "core"}
